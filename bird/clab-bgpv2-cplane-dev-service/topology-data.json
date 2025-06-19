@@ -1,0 +1,145 @@
+{
+  "name": "bgpv2-cplane-dev-service",
+  "type": "clab",
+  "clab": {
+    "config": {
+      "prefix": "clab",
+      "mgmt": {
+        "network": "clab",
+        "bridge": "br-ea5b784430a9",
+        "ipv4-subnet": "172.20.20.0/24",
+        "ipv4-gw": "172.20.20.1",
+        "ipv6-subnet": "3fff:172:20:20::/64",
+        "ipv6-gw": "3fff:172:20:20::1",
+        "mtu": 1500,
+        "external-access": true
+      }
+    }
+  },
+  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICrbOOAH4hSevKEShFpORyUXJrRQ9ZiHwGKcQkHzX7s6","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcnzieoL3ZW2ISGIskeQ8CYpZ07tMHjoKk2pEunL0EA","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIe+wR5tBqGI1DxpPNnGs0hSAGU3uAuqeefenkr2H5YY","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIRnPlH8Klgis1EvBWBHdzK5rpDpqwGrvjez8lQzbvpY"],
+  "nodes": {
+    "router0": {
+      "index": "0",
+      "shortname": "router0",
+      "longname": "clab-bgpv2-cplane-dev-service-router0",
+      "fqdn": "router0.bgpv2-cplane-dev-service.io",
+      "group": "",
+      "labdir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bird/clab-bgpv2-cplane-dev-service/router0",
+      "kind": "linux",
+      "image": "bird:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "172.20.20.2",
+      "mgmt-ipv4-prefix-length": 24,
+      "mgmt-ipv6-address": "3fff:172:20:20::2",
+      "mgmt-ipv6-prefix-length": 64,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ea5b784430a9",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bird/clab-bgpv2-cplane-dev-service/router0",
+        "clab-node-longname": "clab-bgpv2-cplane-dev-service-router0",
+        "clab-node-name": "router0",
+        "clab-node-type": "",
+        "clab-owner": "hanapedia",
+        "clab-topo-file": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bird/topo.yaml",
+        "containerlab": "bgpv2-cplane-dev-service"
+      },
+      "port-bindings": [
+      ]
+    },
+    "server0": {
+      "index": "1",
+      "shortname": "server0",
+      "longname": "clab-bgpv2-cplane-dev-service-server0",
+      "fqdn": "server0.bgpv2-cplane-dev-service.io",
+      "group": "",
+      "labdir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bird/clab-bgpv2-cplane-dev-service/server0",
+      "kind": "linux",
+      "image": "bird:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ea5b784430a9",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bird/clab-bgpv2-cplane-dev-service/server0",
+        "clab-node-longname": "clab-bgpv2-cplane-dev-service-server0",
+        "clab-node-name": "server0",
+        "clab-node-type": "",
+        "clab-owner": "hanapedia",
+        "clab-topo-file": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bird/topo.yaml",
+        "containerlab": "bgpv2-cplane-dev-service"
+      },
+      "port-bindings": [
+      ]
+    },
+    "server1": {
+      "index": "2",
+      "shortname": "server1",
+      "longname": "clab-bgpv2-cplane-dev-service-server1",
+      "fqdn": "server1.bgpv2-cplane-dev-service.io",
+      "group": "",
+      "labdir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bird/clab-bgpv2-cplane-dev-service/server1",
+      "kind": "linux",
+      "image": "bird:latest",
+      "mgmt-net": "",
+      "mgmt-intf": "",
+      "mgmt-ipv4-address": "",
+      "mgmt-ipv4-prefix-length": 0,
+      "mgmt-ipv6-address": "",
+      "mgmt-ipv6-prefix-length": 0,
+      "mac-address": "",
+      "labels": {
+        "clab-mgmt-net-bridge": "br-ea5b784430a9",
+        "clab-node-group": "",
+        "clab-node-kind": "linux",
+        "clab-node-lab-dir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bird/clab-bgpv2-cplane-dev-service/server1",
+        "clab-node-longname": "clab-bgpv2-cplane-dev-service-server1",
+        "clab-node-name": "server1",
+        "clab-node-type": "",
+        "clab-owner": "hanapedia",
+        "clab-topo-file": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bird/topo.yaml",
+        "containerlab": "bgpv2-cplane-dev-service"
+      },
+      "port-bindings": [
+      ]
+    }
+  },
+  "links": [
+    {
+      "a": {
+        "node": "router0",
+        "interface": "net1",
+        "mac": "aa:c1:ab:4e:60:24",
+        "peer": "z"
+      },
+      "z": {
+        "node": "server0",
+        "interface": "net0",
+        "mac": "aa:c1:ab:72:c5:36",
+        "peer": "a"
+      }
+    },
+    {
+      "a": {
+        "node": "router0",
+        "interface": "net2",
+        "mac": "aa:c1:ab:9c:3f:dc",
+        "peer": "z"
+      },
+      "z": {
+        "node": "server1",
+        "interface": "net0",
+        "mac": "aa:c1:ab:b5:cb:db",
+        "peer": "a"
+      }
+    }
+  ]
+}
