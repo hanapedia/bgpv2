@@ -7,15 +7,12 @@ metadata:
   labels:
     bgp: blue
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - port: 1234
+    - port: 80
+      targetPort: 8080
   selector:
     app: curl-blue
-  externalIPs:
-    - 192.168.100.10
-  externalTrafficPolicy: Local
-  internalTrafficPolicy: Local
 
 ---
 apiVersion: v1
@@ -26,13 +23,12 @@ metadata:
   labels:
     bgp: red
 spec:
-  type: NodePort
+  type: ClusterIP
   ports:
-    - port: 1236
+    - port: 80
+      targetPort: 8080
   selector:
     app: curl-red
-  externalIPs:
-    - 192.168.200.10
 
 ---
 apiVersion: apps/v1
@@ -43,7 +39,7 @@ metadata:
   labels:
     app: curl-blue
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: curl-blue
@@ -66,7 +62,7 @@ metadata:
   labels:
     app: curl-red
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: curl-red

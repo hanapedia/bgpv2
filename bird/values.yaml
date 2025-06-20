@@ -23,3 +23,7 @@ k8s:
 operator:
   enabled: true
   replicas: 1
+
+kubeProxyReplacement: true
+
+devices: "net0"

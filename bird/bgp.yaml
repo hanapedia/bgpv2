@@ -60,9 +60,18 @@ spec:
     - advertisementType: "Service"
       service:
         addresses:
+          - LoadBalancerIP
+      selector:
+        matchExpressions:
+         - {key: somekey, operator: NotIn, values: ['never-used-value']}
+      attributes:
+        communities:
+          standard: [ "65000:300" ]
+    - advertisementType: "Service"
+      service:
+        addresses:
           - ClusterIP
           - ExternalIP
-          - LoadBalancerIP
       selector:
         matchExpressions:
           - { key: bgp, operator: In, values: [ blue ] }
@@ -74,7 +83,6 @@ spec:
         addresses:
           - ClusterIP
           - ExternalIP
-          - LoadBalancerIP
       selector:
         matchExpressions:
           - { key: bgp, operator: In, values: [ red ] }
