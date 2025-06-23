@@ -10,7 +10,7 @@ metadata:
   name: ubuntu-echo
   namespace: tenant-green
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: ubuntu-echo
@@ -19,6 +19,8 @@ spec:
       labels:
         app: ubuntu-echo
     spec:
+      nodeSelector:
+        kubernetes.io/hostname: bgpv2-cplane-dev-service-control-plane
       containers:
         - name: ubuntu
           image: hashicorp/http-echo

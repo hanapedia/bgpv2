@@ -27,3 +27,15 @@ operator:
 kubeProxyReplacement: true
 
 devices: "net0"
+
+loadBalancer:
+  acceleration: disabled
+  algorithm: maglev
+  dsrDispatch: geneve
+  dsrL4Translate: backend
+  mode: dsr
+
+nodePort:
+  enabled: true
+
+tunnelProtocol: geneve
