@@ -26,7 +26,7 @@ operator:
 
 kubeProxyReplacement: true
 
-devices: "net0"
+# devices: "net0"
 
 loadBalancer:
   acceleration: disabled

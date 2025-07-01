@@ -5,22 +5,31 @@ COIL_VERSION ?= 2.8.0
 deploy:
 	kind create cluster --config cluster.yaml
 	kind load docker-image --name bgpv2-cplane-dev-service bird:latest
+	kind load docker-image --name bgpv2-cplane-dev-service ghcr.io/cybozu-go/coil:2.8.0
 
 	sudo containerlab -t topo.yaml deploy
 	# remove taint from control plane node
 	kubectl taint nodes bgpv2-cplane-dev-service-control-plane node-role.kubernetes.io/control-plane:NoSchedule-
 
+	$(MAKE) install-with-coil
+
+	kubectl apply -f bgp_lb.yaml
+	kubectl apply -f lb-test.yaml
+
 install-with-coil:
 	# install coil
 	kubectl apply -f configs/coil.yaml
-	kubectl wait --for=condition=Ready -n kube-system pod -l app.kubernetes.io/name=coil
+	kubectl wait --for=condition=Ready -n kube-system pod -l app.kubernetes.io/name=coil --timeout=300s
+
+    # apply default Address pool
 	kubectl apply -f configs/coil_default_pool.yaml
 
 	# install cilium
-	helm install cilium -n kube-system $(CILIUM_HELM_REPO) --version $(CILIUM_VERSION) -f configs/values.yaml
+	helm install cilium -n kube-system $(CILIUM_HELM_REPO) --version $(CILIUM_VERSION) -f values.yaml
 	cilium status --wait --namespace kube-system
 
-install-cilium:
+
+install-just-cilium:
 	# install cilium
 	helm install cilium -n kube-system $(CILIUM_HELM_REPO) --version $(CILIUM_VERSION) -f values.yaml
 	cilium status --wait --namespace kube-system

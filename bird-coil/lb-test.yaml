@@ -10,7 +10,7 @@ metadata:
   name: ubuntu-echo
   namespace: tenant-green
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: ubuntu-echo
@@ -39,7 +39,7 @@ metadata:
 spec:
   allowFirstLastIPs: "No"
   blocks:
-    - cidr: "20.1.10.1/30"
+    - cidr: "20.1.10.2/32"
   serviceSelector:
     matchExpressions:
       - {key: bgp, operator: In, values: [green]}

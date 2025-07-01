@@ -12,4 +12,19 @@ spec:
     - name: curl
       image: curlimages/curl
       command: ["sleep", "infinit"]
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: ubuntu-worker
+  namespace: default
+  labels:
+    app: ubuntu
+spec:
+  nodeSelector:
+    kubernetes.io/hostname: bgpv2-cplane-dev-service-worker
+  containers:
+    - name: curl
+      image: curlimages/curl
+      command: ["sleep", "infinit"]
 

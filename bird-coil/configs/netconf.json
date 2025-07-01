@@ -11,6 +11,9 @@
       "capabilities": {
         "portMappings": true
       }
+    },
+    {
+      "type": "cilium-cni"
     }
   ]
 }

@@ -3,6 +3,10 @@ debug:
 
 routingMode: native
 
+cni:
+  chainingMode: "generic-veth"
+  customConf: true
+
 ipv6:
   enabled: false
 
@@ -10,14 +14,14 @@ bgpControlPlane:
   enabled: true
   v2Enabled: true
 
-ipv4NativeRoutingCIDR: 10.0.0.0/8
+# ipv4NativeRoutingCIDR: 10.0.0.0/8
 # ipv6NativeRoutingCIDR: fd00::/16
 
-ipam:
-  mode: kubernetes
+# ipam:
+#   mode: kubernetes
 
-k8s:
-  requireIPv4PodCIDR: true
+# k8s:
+#   requireIPv4PodCIDR: true
   # requireIPv6PodCIDR: true
 
 operator:
@@ -26,7 +30,7 @@ operator:
 
 kubeProxyReplacement: true
 
-devices: "net0"
+# devices: "net0"
 
 loadBalancer:
   acceleration: disabled
@@ -35,7 +39,25 @@ loadBalancer:
   dsrL4Translate: backend
   mode: dsr
 
+bpf:
+  hostLegacyRouting: true
+  datapathMode: "veth"
+
+externalIPs:
+  enabled: true
+
 nodePort:
   enabled: true
 
+enableIPv4Masquerade: false
+enableIdentityMark: false
+
+
 tunnelProtocol: geneve
+
+hubble:
+  enabled: true
+  relay:
+    enabled: true
+  ui:
+    enabled: true

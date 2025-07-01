@@ -1,4 +1,4 @@
-FROM debian:bookworm-slim
+FROM ubuntu:jammy
 
 # Install BIRD and common network tools
 RUN apt-get update && \
@@ -11,6 +11,8 @@ RUN apt-get update && \
         dnsutils \
         net-tools \
         busybox \
+        iptables \
+        curl \
         ca-certificates && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
