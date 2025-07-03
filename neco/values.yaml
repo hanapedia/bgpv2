@@ -38,11 +38,33 @@ extraVolumeMounts:
 hostPort:
   enabled: false
 hubble:
-  enabled: true
+  metrics:
+    enableOpenMetrics: true
+    enabled:
+      - "drop:sourceContext=reserved-identity;destinationContext=reserved-identity;labelsContext=source_namespace,destination_namespace,traffic_direction"
+      - "icmp:sourceContext=reserved-identity;destinationContext=reserved-identity;labelsContext=source_namespace,destination_namespace"
+      - "tcp:sourceContext=reserved-identity;destinationContext=reserved-identity;labelsContext=source_namespace,destination_namespace"
+    port: 9965
   relay:
     enabled: true
-  ui:
-    enabled: true
+    tls:
+      server:
+        enabled: true
+    rollOutPods: true
+    resources:
+      requests:
+        cpu: 100m
+        memory: 200Mi
+    podLabels:
+      identity.neco.cybozu.io/name: hubble-relay
+    podSecurityContext:
+      fsGroup: 10000
+    securityContext:
+      runAsUser: 10000
+      runAsGroup: 10000
+  tls:
+    auto:
+      method: "cronJob"
 k8sServiceHost: 127.0.0.1
 k8sServicePort: 16443
 # kubeProxyReplacement: "partial"
