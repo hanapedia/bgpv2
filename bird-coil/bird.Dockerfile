@@ -20,4 +20,11 @@ RUN apt-get update && \
 # Ensure /run/bird exists at runtime
 RUN mkdir -p /run/bird
 
-ENTRYPOINT ["/usr/sbin/bird", "-c", "/etc/bird.conf", "-d"]
+# Copy binaries
+COPY tools/rivers /tools/rivers
+COPY entrypoint.sh /entrypoint.sh
+
+# Make entrypoint script executable
+RUN chmod +x /entrypoint.sh
+
+ENTRYPOINT ["/entrypoint.sh"]

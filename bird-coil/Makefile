@@ -1,6 +1,7 @@
 CILIUM_HELM_REPO ?= oci://quay.io/cilium-charts-dev/cilium
 CILIUM_VERSION ?= 1.16.0-dev-dev.247-main-8c97a2119d
 COIL_VERSION ?= 2.8.0
+CKE_VERSION ?= 1.31.0
 
 deploy:
 	kind create cluster --config cluster.yaml
@@ -13,20 +14,23 @@ deploy:
 
 	$(MAKE) install-with-coil
 
+	# restart coredns
+	kubectl rollout restart -n kube-system deployment coredns
+
 	kubectl apply -f bgp_lb.yaml
 	kubectl apply -f lb-test.yaml
 
 install-with-coil:
 	# install coil
-	kubectl apply -f configs/coil.yaml
+	kubectl apply -k coil/base
 	kubectl wait --for=condition=Ready -n kube-system pod -l app.kubernetes.io/name=coil --timeout=300s
 
-    # apply default Address pool
-	kubectl apply -f configs/coil_default_pool.yaml
 
 	# install cilium
 	helm install cilium -n kube-system $(CILIUM_HELM_REPO) --version $(CILIUM_VERSION) -f values.yaml
 	cilium status --wait --namespace kube-system
+    # apply default Address pool
+	kubectl apply -f configs/coil_default_pool.yaml
 
 
 install-just-cilium:
@@ -60,4 +64,13 @@ update-coil:
 	cd /tmp/work-coil/v2 ; $(MAKE) certs
 	cp configs/netconf.json /tmp/work-coil/v2/netconf.json
 	kustomize build /tmp/work-coil/v2 > configs/coil.yaml
+	kustomize build /tmp/work-coil/v2 > coil/base/coil.yaml
 	rm -rf /tmp/work-coil
+
+update-rivers:
+	rm -rf /tmp/work-cke
+	mkdir -p /tmp/work-cke
+	curl -sSfL https://github.com/cybozu-go/cke/archive/v$(CKE_VERSION).tar.gz | tar -C /tmp/work-cke -xzf - --strip-components=1
+	cd /tmp/work-cke/tools ; mkdir bin && GOARCH=amd64 GOOS=linux CGO_ENABLED=0 go build -ldflags="-w -s" -o bin/rivers ./rivers
+	cp /tmp/work-cke/tools/bin/rivers tools/
+	rm -rf /tmp/work-cke

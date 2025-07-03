@@ -25,8 +25,7 @@ topology:
       exec:
       - ip addr add 10.0.1.2/24 dev net0
       - ip route replace default via 10.0.1.1 dev net0
-      - iptables -t raw -I OUTPUT  -j TRACE
-      - iptables -t raw -I PREROUTING -j TRACE
+      - ip route add 10.2.0.1/32 dev lo
 
       # These static routes are needed because Cilium cannot import routes currently.
       # - ip route add 10.0.0.0/8 via 10.0.1.1 dev net0
@@ -41,8 +40,7 @@ topology:
       exec:
       - ip addr add 10.0.2.2/24 dev net0
       - ip route replace default via 10.0.2.1 dev net0
-      - iptables -t raw -I OUTPUT  -j TRACE
-      - iptables -t raw -I PREROUTING -j TRACE
+
       # These static routes are needed because Cilium cannot import routes currently.
       # - ip route add 10.0.0.0/8 via 10.0.2.1 dev net0
       # - ip route add 10.0.0.1/32 via 10.0.2.1 dev net0

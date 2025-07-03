@@ -1,60 +1,45 @@
-debug:
-  enabled: true
-
-routingMode: native
-
-cni:
-  chainingMode: "generic-veth"
-  customConf: true
-
-ipv6:
-  enabled: false
-
 bgpControlPlane:
   enabled: true
   v2Enabled: true
-
-# ipv4NativeRoutingCIDR: 10.0.0.0/8
-# ipv6NativeRoutingCIDR: fd00::/16
-
-# ipam:
-#   mode: kubernetes
-
-# k8s:
-#   requireIPv4PodCIDR: true
-  # requireIPv6PodCIDR: true
-
-operator:
+bpf:
+  hostLegacyRouting: true
+  datapathMode: "veth"
+cgroup:
+  autoMount:
+    enabled: false
+  hostRoot: /sys/fs/cgroup
+cni:
+  chainingMode: "generic-veth"
+  customConf: true
+debug:
   enabled: true
-  replicas: 1
-
-kubeProxyReplacement: true
-
 # devices: "net0"
-
+enableIPv4Masquerade: false
+enableIdentityMark: false
+externalIPs:
+  enabled: true
+hubble:
+  enabled: true
+k8sServiceHost: 127.0.0.1
+k8sServicePort: 16443
+kubeProxyReplacement: true
 loadBalancer:
   acceleration: disabled
   algorithm: maglev
   dsrDispatch: geneve
   dsrL4Translate: backend
   mode: dsr
-
-bpf:
-  hostLegacyRouting: true
-  datapathMode: "veth"
-
-externalIPs:
-  enabled: true
-
+maglev:
+  hashSeed: 3HCx6JennjWtot2U
 nodePort:
   directRoutingDevice: "net0"
   enabled: true
-
-enableIPv4Masquerade: false
-enableIdentityMark: false
-
-
-tunnelProtocol: geneve
-
-hubble:
+operator:
   enabled: true
+  replicas: 1
+routingMode: native
+sessionAffinity: true
+# socketLB:
+#   enabled: true
+#   hostNamespaceOnly: true
+tunnelProtocol: geneve
