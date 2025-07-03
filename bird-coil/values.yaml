@@ -47,6 +47,7 @@ externalIPs:
   enabled: true
 
 nodePort:
+  directRoutingDevice: "net0"
   enabled: true
 
 enableIPv4Masquerade: false
@@ -57,7 +58,3 @@ tunnelProtocol: geneve
 
 hubble:
   enabled: true
-  relay:
-    enabled: true
-  ui:
-    enabled: true
