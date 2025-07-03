@@ -14,6 +14,10 @@ deploy:
 	helm install cilium -n kube-system $(HELM_REPO) --version $(VERSION) -f values.yaml
 	cilium status --wait --namespace kube-system
 
+	# apply bgp manifests
+	kubectl apply -f bgp.yaml
+	kubectl apply -f lb-test.yaml
+
 destroy:
 	sudo containerlab -t topo.yaml destroy -c
 	kind delete clusters bgpv2-cplane-dev-service
