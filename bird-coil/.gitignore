@@ -1,4 +1,4 @@
 .topo.yaml.bak
-clab-bgpv2-cplane-dev-service
+clab-bgpv2-bird-coil
 **/coil.yaml
 tools/rivers

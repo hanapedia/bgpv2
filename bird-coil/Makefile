@@ -5,12 +5,12 @@ CKE_VERSION ?= 1.31.0
 
 deploy:
 	kind create cluster --config cluster.yaml
-	kind load docker-image --name bgpv2-cplane-dev-service bird:latest
-	kind load docker-image --name bgpv2-cplane-dev-service ghcr.io/cybozu-go/coil:2.8.0
+	kind load docker-image --name bgpv2-bird-coil bird:latest
+	kind load docker-image --name bgpv2-bird-coil ghcr.io/cybozu-go/coil:2.8.0
 
 	sudo containerlab -t topo.yaml deploy
 	# remove taint from control plane node
-	kubectl taint nodes bgpv2-cplane-dev-service-control-plane node-role.kubernetes.io/control-plane:NoSchedule-
+	kubectl taint nodes bgpv2-bird-coil-control-plane node-role.kubernetes.io/control-plane:NoSchedule-
 
 	$(MAKE) install-with-coil
 
@@ -40,7 +40,7 @@ install-just-cilium:
 
 destroy:
 	sudo containerlab -t topo.yaml destroy -c
-	kind delete clusters bgpv2-cplane-dev-service
+	kind delete clusters bgpv2-bird-coil
 	rm -f .topo.yaml.bak
 
 reload:

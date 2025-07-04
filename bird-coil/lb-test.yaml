@@ -20,7 +20,7 @@ spec:
         app: ubuntu-echo
     spec:
       nodeSelector:
-        kubernetes.io/hostname: bgpv2-cplane-dev-service-control-plane
+        kubernetes.io/hostname: bgpv2-bird-coil-control-plane
       containers:
         - name: ubuntu
           image: hashicorp/http-echo

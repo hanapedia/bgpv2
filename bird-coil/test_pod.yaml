@@ -7,7 +7,7 @@ metadata:
     app: ubuntu
 spec:
   nodeSelector:
-    kubernetes.io/hostname: bgpv2-cplane-dev-service-control-plane
+    kubernetes.io/hostname: bgpv2-bird-coil-control-plane
   containers:
     - name: curl
       image: curlimages/curl
@@ -22,7 +22,7 @@ metadata:
     app: ubuntu
 spec:
   nodeSelector:
-    kubernetes.io/hostname: bgpv2-cplane-dev-service-worker
+    kubernetes.io/hostname: bgpv2-bird-coil-worker
   containers:
     - name: curl
       image: curlimages/curl

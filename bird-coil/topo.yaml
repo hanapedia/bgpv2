@@ -1,4 +1,4 @@
-name: bgpv2-cplane-dev-service
+name: bgpv2-bird-coil
 topology:
   nodes:
     # A simple BGP router that peers with Cilium with eBGP.
@@ -21,7 +21,7 @@ topology:
       image: bird:latest
       binds:
         - configs/bird_cp.conf:/etc/bird.conf
-      network-mode: container:bgpv2-cplane-dev-service-control-plane
+      network-mode: container:bgpv2-bird-coil-control-plane
       exec:
       - ip addr add 10.0.1.2/24 dev net0
       - ip route replace default via 10.0.1.1 dev net0
@@ -36,7 +36,7 @@ topology:
       image: bird:latest
       binds:
         - configs/bird_worker.conf:/etc/bird.conf
-      network-mode: container:bgpv2-cplane-dev-service-worker
+      network-mode: container:bgpv2-bird-coil-worker
       exec:
       - ip addr add 10.0.2.2/24 dev net0
       - ip route replace default via 10.0.2.1 dev net0
