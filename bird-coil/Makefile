@@ -2,10 +2,11 @@ CILIUM_HELM_REPO ?= oci://quay.io/cilium-charts-dev/cilium
 CILIUM_VERSION ?= 1.16.0-dev-dev.247-main-8c97a2119d
 COIL_VERSION ?= 2.8.0
 CKE_VERSION ?= 1.31.0
+BIRD_VERSION ?= 2.0.0
 
-deploy:
+deploy: update-coil update-rivers
 	kind create cluster --config cluster.yaml
-	kind load docker-image --name bgpv2-bird-coil bird:latest
+	kind load docker-image --name bgpv2-bird-coil bird:$(BIRD_VERSION)
 	kind load docker-image --name bgpv2-bird-coil ghcr.io/cybozu-go/coil:2.8.0
 
 	sudo containerlab -t topo.yaml deploy
@@ -18,7 +19,8 @@ deploy:
 	kubectl rollout restart -n kube-system deployment coredns
 
 	kubectl apply -f bgp_lb.yaml
-	kubectl apply -f lb-test.yaml
+	kubectl apply -f lb_test.yaml
+	kubectl apply -f test_pod.yaml
 
 install-with-coil:
 	# install coil
@@ -32,12 +34,6 @@ install-with-coil:
     # apply default Address pool
 	kubectl apply -f configs/coil_default_pool.yaml
 
-
-install-just-cilium:
-	# install cilium
-	helm install cilium -n kube-system $(CILIUM_HELM_REPO) --version $(CILIUM_VERSION) -f values.yaml
-	cilium status --wait --namespace kube-system
-
 destroy:
 	sudo containerlab -t topo.yaml destroy -c
 	kind delete clusters bgpv2-bird-coil
@@ -47,30 +43,25 @@ reload:
 	$(MAKE) destroy
 	$(MAKE) deploy
 
-apply-bgp:
-	kubectl apply -f bgp.yaml
-
-apply-service:
-	kubectl apply -f service.yaml
-
-apply-lb:
-	kubectl apply -f lb-ip.yaml
-
-update-coil:
+update-coil: coil/base/coil.yaml
+coil/base/coil.yaml:
 	rm -rf /tmp/work-coil
 	mkdir -p /tmp/work-coil
 	curl -sSfL https://github.com/cybozu-go/coil/archive/v$(COIL_VERSION).tar.gz | tar -C /tmp/work-coil -xzf - --strip-components=1
 	cd /tmp/work-coil/v2 ; sed -i -E 's,^#(- config/pod/compat_calico.yaml),\1,' kustomization.yaml
 	cd /tmp/work-coil/v2 ; $(MAKE) certs
 	cp configs/netconf.json /tmp/work-coil/v2/netconf.json
-	kustomize build /tmp/work-coil/v2 > configs/coil.yaml
 	kustomize build /tmp/work-coil/v2 > coil/base/coil.yaml
 	rm -rf /tmp/work-coil
 
-update-rivers:
+update-rivers: tools/rivers
+tools/rivers:
 	rm -rf /tmp/work-cke
 	mkdir -p /tmp/work-cke
 	curl -sSfL https://github.com/cybozu-go/cke/archive/v$(CKE_VERSION).tar.gz | tar -C /tmp/work-cke -xzf - --strip-components=1
 	cd /tmp/work-cke/tools ; mkdir bin && GOARCH=amd64 GOOS=linux CGO_ENABLED=0 go build -ldflags="-w -s" -o bin/rivers ./rivers
 	cp /tmp/work-cke/tools/bin/rivers tools/
 	rm -rf /tmp/work-cke
+
+build-bird: 
+	docker build -f bird.Dockerfile -t bird:$(BIRD_VERSION) --platform linux/amd64 .
