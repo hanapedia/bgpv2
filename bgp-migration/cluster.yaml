@@ -1,0 +1,35 @@
+apiVersion: kind.x-k8s.io/v1alpha4
+kind: Cluster
+name: bgp-migration
+networking:
+  disableDefaultCNI: true
+  podSubnet: "10.1.0.0/16"
+  serviceSubnet: "10.2.0.0/16"
+  kubeProxyMode: "none"
+nodes:
+- role: control-plane
+  kubeadmConfigPatches:
+  - |
+    kind: InitConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-ip: "10.0.1.2"
+        node-labels: "bgp=65001"
+    localAPIEndpoint:
+      advertiseAddress: "10.0.1.2"
+- role: worker
+  kubeadmConfigPatches:
+  - |
+    kind: JoinConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-ip: "10.0.2.2"
+        node-labels: "bgp=65001"
+- role: worker
+  kubeadmConfigPatches:
+  - |
+    kind: JoinConfiguration
+    nodeRegistration:
+      kubeletExtraArgs:
+        node-ip: "10.0.3.2"
+        node-labels: "bgp=65001"

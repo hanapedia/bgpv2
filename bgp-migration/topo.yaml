@@ -1,0 +1,48 @@
+name: bgp-migration
+topology:
+  nodes:
+    # A simple BGP router that peers with Cilium with eBGP.
+    router0:
+      kind: linux
+      image: bird:latest
+      binds:
+        - configs/bird_router.conf:/etc/bird.conf
+      exec:
+      - ip addr add 10.0.0.1/32 dev lo
+      - ip addr add 10.0.1.1/24 dev net1
+      - ip addr add 10.0.2.1/24 dev net2
+      - ip addr add 10.0.3.1/24 dev net3
+      - sysctl -w net.ipv4.ip_forward=1
+      - iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+    control-plane:
+      kind: linux
+      image: bird:latest
+      binds:
+        - configs/bird_cp.conf:/etc/bird.conf
+      network-mode: container:bgp-migration-control-plane
+      exec:
+      - ip addr add 10.0.1.2/24 dev net0
+      - ip route replace default via 10.0.1.1 dev net0
+      - ip route add 10.2.0.1/32 dev lo
+    worker:
+      kind: linux
+      image: bird:latest
+      binds:
+        - configs/bird_worker.conf:/etc/bird.conf
+      network-mode: container:bgp-migration-worker
+      exec:
+      - ip addr add 10.0.2.2/24 dev net0
+      - ip route replace default via 10.0.2.1 dev net0
+    worker2:
+      kind: linux
+      image: bird:latest
+      binds:
+        - configs/bird_worker2.conf:/etc/bird.conf
+      network-mode: container:bgp-migration-worker2
+      exec:
+      - ip addr add 10.0.3.2/24 dev net0
+      - ip route replace default via 10.0.3.1 dev net0
+  links:
+  - endpoints: ["router0:net1", "control-plane:net0"]
+  - endpoints: ["router0:net2", "worker:net0"]
+  - endpoints: ["router0:net3", "worker2:net0"]

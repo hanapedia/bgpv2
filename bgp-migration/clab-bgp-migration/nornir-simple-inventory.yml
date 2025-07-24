@@ -1,0 +1,21 @@
+---
+control-plane:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+router0:
+    username: 
+    password: 
+    platform: linux
+    hostname: 172.20.20.2
+worker:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
+worker2:
+    username: 
+    password: 
+    platform: linux
+    hostname: 
