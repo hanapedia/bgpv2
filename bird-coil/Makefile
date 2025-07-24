@@ -5,11 +5,13 @@ CKE_VERSION ?= 1.31.0
 BIRD_VERSION ?= 2.0.0
 
 deploy: update-coil update-rivers
+	# must start containerlab in the background before kind to utilize its retries.
+	sudo containerlab -t topo.yaml deploy &
+
 	kind create cluster --config cluster.yaml
 	kind load docker-image --name bgpv2-bird-coil bird:$(BIRD_VERSION)
 	kind load docker-image --name bgpv2-bird-coil ghcr.io/cybozu-go/coil:2.8.0
 
-	sudo containerlab -t topo.yaml deploy
 	# remove taint from control plane node
 	kubectl taint nodes bgpv2-bird-coil-control-plane node-role.kubernetes.io/control-plane:NoSchedule-
 
