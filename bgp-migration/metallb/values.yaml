@@ -1,0 +1,51 @@
+# bgpControlPlane:
+#   enabled: true
+#   v2Enabled: true
+bgp:
+  announce:
+    loadbalancerIP: true
+  enabled: true
+bpf:
+  hostLegacyRouting: true
+  datapathMode: "veth"
+cgroup:
+  autoMount:
+    enabled: false
+  hostRoot: /sys/fs/cgroup
+cni:
+  chainingMode: "generic-veth"
+  customConf: true
+debug:
+  enabled: true
+# devices: "net0"
+enableIPv4Masquerade: false
+enableIdentityMark: false
+externalIPs:
+  enabled: true
+hubble:
+  enabled: true
+k8sServiceHost: 127.0.0.1
+k8sServicePort: 16443
+kubeProxyReplacement: true
+loadBalancer:
+  acceleration: disabled
+  algorithm: maglev
+  dsrDispatch: geneve
+  dsrL4Translate: backend
+  mode: dsr
+maglev:
+  hashSeed: 3HCx6JennjWtot2U
+nodePort:
+  directRoutingDevice: "net0"
+  enabled: true
+operator:
+  enabled: true
+  replicas: 1
+routingMode: native
+sessionAffinity: true
+# socketLB:
+#   enabled: true
+#   hostNamespaceOnly: true
+tunnelProtocol: geneve
+envoy:
+  enabled: false

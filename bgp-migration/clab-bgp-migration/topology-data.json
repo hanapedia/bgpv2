@@ -6,7 +6,7 @@
       "prefix": "clab",
       "mgmt": {
         "network": "clab",
-        "bridge": "br-34f3f6cdd15e",
+        "bridge": "br-03c736902c9d",
         "ipv4-subnet": "172.20.20.0/24",
         "ipv4-gw": "172.20.20.1",
         "ipv6-subnet": "3fff:172:20:20::/64",
@@ -16,7 +16,7 @@
       }
     }
   },
-  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcnzieoL3ZW2ISGIskeQ8CYpZ07tMHjoKk2pEunL0EA","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIe+wR5tBqGI1DxpPNnGs0hSAGU3uAuqeefenkr2H5YY","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIRnPlH8Klgis1EvBWBHdzK5rpDpqwGrvjez8lQzbvpY","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICrbOOAH4hSevKEShFpORyUXJrRQ9ZiHwGKcQkHzX7s6"],
+  "ssh-pub-keys": ["ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIRnPlH8Klgis1EvBWBHdzK5rpDpqwGrvjez8lQzbvpY","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICrbOOAH4hSevKEShFpORyUXJrRQ9ZiHwGKcQkHzX7s6","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIcnzieoL3ZW2ISGIskeQ8CYpZ07tMHjoKk2pEunL0EA","ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIIe+wR5tBqGI1DxpPNnGs0hSAGU3uAuqeefenkr2H5YY"],
   "nodes": {
     "control-plane": {
       "index": "0",
@@ -35,7 +35,7 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-34f3f6cdd15e",
+        "clab-mgmt-net-bridge": "br-03c736902c9d",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bgp-migration/clab-bgp-migration/control-plane",
@@ -66,7 +66,7 @@
       "mgmt-ipv6-prefix-length": 64,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-34f3f6cdd15e",
+        "clab-mgmt-net-bridge": "br-03c736902c9d",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bgp-migration/clab-bgp-migration/router0",
@@ -97,7 +97,7 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-34f3f6cdd15e",
+        "clab-mgmt-net-bridge": "br-03c736902c9d",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bgp-migration/clab-bgp-migration/worker",
@@ -128,7 +128,7 @@
       "mgmt-ipv6-prefix-length": 0,
       "mac-address": "",
       "labels": {
-        "clab-mgmt-net-bridge": "br-34f3f6cdd15e",
+        "clab-mgmt-net-bridge": "br-03c736902c9d",
         "clab-node-group": "",
         "clab-node-kind": "linux",
         "clab-node-lab-dir": "/home/hanapedia.linux/code/src/github.com/hanapedia/bgpv2/bgp-migration/clab-bgp-migration/worker2",
@@ -148,13 +148,13 @@
       "a": {
         "node": "router0",
         "interface": "net1",
-        "mac": "aa:c1:ab:ae:6d:5c",
+        "mac": "aa:c1:ab:f2:c6:2e",
         "peer": "z"
       },
       "z": {
         "node": "control-plane",
         "interface": "net0",
-        "mac": "aa:c1:ab:08:a9:a3",
+        "mac": "aa:c1:ab:5d:be:c8",
         "peer": "a"
       }
     },
@@ -162,13 +162,13 @@
       "a": {
         "node": "router0",
         "interface": "net2",
-        "mac": "aa:c1:ab:27:4c:1f",
+        "mac": "aa:c1:ab:1f:62:ac",
         "peer": "z"
       },
       "z": {
         "node": "worker",
         "interface": "net0",
-        "mac": "aa:c1:ab:e3:fb:9c",
+        "mac": "aa:c1:ab:e6:8d:b6",
         "peer": "a"
       }
     },
@@ -176,13 +176,13 @@
       "a": {
         "node": "router0",
         "interface": "net3",
-        "mac": "aa:c1:ab:57:a4:90",
+        "mac": "aa:c1:ab:d4:35:40",
         "peer": "z"
       },
       "z": {
         "node": "worker2",
         "interface": "net0",
-        "mac": "aa:c1:ab:ea:eb:49",
+        "mac": "aa:c1:ab:79:9e:4b",
         "peer": "a"
       }
     }
