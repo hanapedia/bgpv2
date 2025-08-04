@@ -20,6 +20,9 @@ externalIPs:
   enabled: true
 hubble:
   enabled: true
+  tls:
+    auto:
+      method: "cronJob"
 k8sServiceHost: 127.0.0.1
 k8sServicePort: 16443
 kubeProxyReplacement: true
@@ -37,6 +40,8 @@ nodePort:
 operator:
   enabled: true
   replicas: 1
+  rollOutPods: true
+rollOutCiliumPods: false # cilium agent rollout restarts when configmap is updated
 routingMode: native
 sessionAffinity: true
 # socketLB:
@@ -45,3 +50,6 @@ sessionAffinity: true
 tunnelProtocol: geneve
 envoy:
   enabled: false
+updateStrategy:
+  rollingUpdate: null
+  type: OnDelete

@@ -41,19 +41,22 @@ install-coil:
 install-cilium:
 	# add configmap for bgp
 	if [ "$(BGP_VARIANT)" = "metallb" ]; then \
-		kubectl apply -f metallb/bgp-config.yaml; \
+		kubectl apply -f metallb/bgp-config-patched.yaml; \
 	fi
 
 	# install cilium
 	kubectl apply -f $(CILIUM_DIR)/upstream.yaml
-	cilium status --wait --namespace kube-system
+	cilium status --wait --namespace kube-system --ignore-warnings
+
+	# create lb ip pool
+	if [ "$(BGP_VARIANT)" = "metallb" ]; then \
+		kubectl apply -f metallb/lbippool.yaml; \
+	fi
 
 	# apply bgp manifests
 	if [ "$(BGP_VARIANT)" != "metallb" ]; then \
 		kubectl apply -f bgp-cp/bgp_lb.yaml; \
 	fi
-
-	kubectl apply -f configs/coil_default_pool.yaml
 
 .PHONY: destroy
 destroy:

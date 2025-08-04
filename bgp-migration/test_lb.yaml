@@ -35,10 +35,10 @@ kind: Service
 metadata:
   name: bastion
   namespace: bastion
-  annotations:
-    metallb.universe.tf/address-pool: bastion
-  labels:
-    metallb.universe.tf/address-pool: bastion
+  # annotations:
+  #   metallb.universe.tf/address-pool: bastion
+  # labels:
+  #   metallb.universe.tf/address-pool: bastion
 spec:
   type: LoadBalancer
   selector:
