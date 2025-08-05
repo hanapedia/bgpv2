@@ -5,4 +5,7 @@ metadata:
 spec:
   allowFirstLastIPs: "No"
   blocks:
-    - cidr: "20.1.10.2/32"
+    - cidr: "20.1.30.2/24"
+  # serviceSelector:
+  #   matchExpressions:
+  #     - {key: metallb.universe.tf/address-pool, operator: In, values: [bastion]}

@@ -18,6 +18,7 @@ deploy: update-coil update-rivers
 
 	kind create cluster --config cluster.yaml
 	kind load docker-image --name bgp-migration ghcr.io/cybozu-go/coil:2.8.0
+	kind load docker-image --name bgp-migration cybozu-go/lbipam-annotate:latest
 
 	# remove taint from control plane node
 	kubectl taint nodes bgp-migration-control-plane node-role.kubernetes.io/control-plane:NoSchedule-
@@ -41,22 +42,27 @@ install-coil:
 install-cilium:
 	# add configmap for bgp
 	if [ "$(BGP_VARIANT)" = "metallb" ]; then \
-		kubectl apply -f metallb/bgp-config-patched.yaml; \
+		kubectl apply -f metallb/bgp-config.yaml; \
 	fi
 
 	# install cilium
 	kubectl apply -f $(CILIUM_DIR)/upstream.yaml
-	cilium status --wait --namespace kube-system --ignore-warnings
 
-	# create lb ip pool
-	if [ "$(BGP_VARIANT)" = "metallb" ]; then \
-		kubectl apply -f metallb/lbippool.yaml; \
-	fi
+	# kubectl wait behaves weirdly when ran right after applying manifests for some reason
+	sleep 5
+
+	kubectl wait --for=condition=Ready -n kube-system pod -l app.kubernetes.io/part-of=cilium --timeout=300s
+	cilium status --namespace kube-system --ignore-warnings
 
 	# apply bgp manifests
 	if [ "$(BGP_VARIANT)" != "metallb" ]; then \
+		kubectl apply -f bgp-cp/_tmp_baseline_pool.yaml; \
 		kubectl apply -f bgp-cp/bgp_lb.yaml; \
 	fi
+
+.PHONY: install-bgp-cp
+install-bgp-cp:
+	$(MAKE) install-cilium BGP_VARIANT=bgp-cp
 
 .PHONY: destroy
 destroy:

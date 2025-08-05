@@ -1,0 +1,16 @@
+# job.yaml
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: lbipam-job
+  namespace: default
+spec:
+  backoffLimit: 2
+  template:
+    spec:
+      serviceAccountName: lbipam-job-sa
+      restartPolicy: OnFailure
+      containers:
+        - name: lbipam
+          image: cybozu-go/lbipam-annotate:latest
+          imagePullPolicy: IfNotPresent

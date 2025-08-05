@@ -1,0 +1,28 @@
+# rbac.yaml
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: lbipam-job-sa
+  namespace: default
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: lbipam-job-role
+rules:
+  - apiGroups: [""]
+    resources: ["services"]
+    verbs: ["get", "list", "patch"]
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: lbipam-job-rolebinding
+subjects:
+  - kind: ServiceAccount
+    name: lbipam-job-sa
+    namespace: default
+roleRef:
+  kind: ClusterRole
+  name: lbipam-job-role
+  apiGroup: rbac.authorization.k8s.io

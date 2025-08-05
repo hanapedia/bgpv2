@@ -21,3 +21,4 @@ data:
       protocol: bgp
       addresses:
       - 20.1.20.0/24
+      auto-assign: false
