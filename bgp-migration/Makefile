@@ -32,6 +32,9 @@ deploy: update-coil update-rivers
 	kubectl apply -f test_pod.yaml
 	kubectl apply -f test_lb.yaml
 
+	# Add annotations to LB services
+	kubectl apply -k lbipam-annotate/config/apply
+
 .PHONY: install-coil
 install-coil:
 	# install coil
@@ -63,6 +66,23 @@ install-cilium:
 .PHONY: install-bgp-cp
 install-bgp-cp:
 	$(MAKE) install-cilium BGP_VARIANT=bgp-cp
+
+.PHONY: patch-bgp-config
+patch-bgp-config:
+	kubectl apply -f metallb/bgp-config-no-pool.yaml
+
+
+.PHONY: apply-baseline-lbipam
+apply-baseline-lbipam:
+	kubectl apply -f metallb/_tmp_baseline_pool.yaml
+
+.PHONY: apply-lbipam
+apply-lbipam:
+	kubectl apply -f metallb/lbipam.yaml
+
+.PHONY: remove-annotation
+remove-annotation:
+	kubectl apply -k lbipam-annotate/config/remove
 
 .PHONY: destroy
 destroy:
@@ -107,3 +127,6 @@ tools/rivers:
 
 build-bird: 
 	docker build -f bird.Dockerfile -t bird:$(BIRD_VERSION) --platform linux/arm64 .
+
+build-lbipam-annotate: 
+	cd ./lbipam-annotate; docker build -t cybozu-go/lbipam-annotate --platform linux/arm64 .
