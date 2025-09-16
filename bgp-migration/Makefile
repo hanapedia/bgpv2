@@ -11,6 +11,10 @@ else
   CILIUM_DIR = bgp-cp
 endif
 
+ifdef PATCHED
+  CILIUM_DIR := $(CILIUM_DIR)/overlay/patched
+endif
+
 .PHONY: deploy
 deploy: update-coil update-rivers
 	# must start containerlab in the background before kind to utilize its retries.
@@ -49,7 +53,7 @@ install-cilium:
 	fi
 
 	# install cilium
-	kubectl apply -f $(CILIUM_DIR)/upstream.yaml
+	kubectl apply -k $(CILIUM_DIR)
 
 	# kubectl wait behaves weirdly when ran right after applying manifests for some reason
 	sleep 5

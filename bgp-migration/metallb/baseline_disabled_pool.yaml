@@ -1,0 +1,10 @@
+---
+apiVersion: "cilium.io/v2alpha1"
+kind: CiliumLoadBalancerIPPool
+metadata:
+  name: baseline
+spec:
+  disabled: true
+  blocks:
+    - cidr: "20.1.10.0/24"
+    - cidr: "20.1.20.0/24"
