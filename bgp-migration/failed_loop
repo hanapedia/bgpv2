@@ -1,0 +1,1249 @@
+time="2025-09-16T08:45:56Z" level=debug msg="Skipped reading configuration file" error="Config File \"cilium-operators\" Not Found in \"[/]\"" subsys=config
+time="2025-09-16T08:45:56Z" level=info msg="Auto-set \"synchronize-k8s-services\" to `true` because BGP support requires synchronizing services." subsys=option
+time="2025-09-16T08:45:56Z" level=info msg="  --agent-not-ready-taint-key='node.cilium.io/agent-not-ready'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --arping-refresh-period='30s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --auto-create-cilium-pod-ip-pools=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --auto-direct-node-routes='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bgp-announce-lb-ip='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bgp-config-path='/var/lib/cilium/bgp/config.yaml'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-events-drop-enabled='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-events-policy-verdict-enabled='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-events-trace-enabled='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-lb-acceleration='disabled'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-lb-algorithm='maglev'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-lb-dsr-dispatch='geneve'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-lb-external-clusterip='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-lb-maglev-hash-seed='3HCx6JennjWtot2U'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-lb-map-max='65536'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-lb-mode='dsr'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-lb-sock='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-map-dynamic-size-ratio='0.0025'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-policy-map-max='16384'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --bpf-root='/sys/fs/bpf'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ces-dynamic-rate-limit-nodes=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ces-dynamic-rate-limit-qps-burst=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ces-dynamic-rate-limit-qps-limit=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ces-enable-dynamic-rate-limit='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ces-max-ciliumendpoints-per-ces='100'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ces-rate-limits='[{\"nodes\":0,\"limit\":10,\"burst\":20}]'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ces-slice-mode='cesSliceModeIdentity'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ces-write-qps-burst='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ces-write-qps-limit='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cgroup-root='/sys/fs/cgroup'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cilium-endpoint-gc-interval='5m0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cilium-pod-labels='k8s-app=cilium'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cilium-pod-namespace=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cluster-id='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cluster-name='default'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cluster-pool-ipv4-cidr='10.0.0.0/8'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cluster-pool-ipv4-mask-size='24'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cluster-pool-ipv6-cidr=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cluster-pool-ipv6-mask-size='112'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --clustermesh-concurrent-service-endpoint-syncs='5'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --clustermesh-config=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --clustermesh-enable-endpoint-sync='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --clustermesh-enable-mcs-api='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --clustermesh-endpoint-updates-batch-period='500ms'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --clustermesh-endpoints-per-slice='100'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --clustermesh-ip-identities-sync-timeout='1m0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --clustermesh-sync-timeout='1m0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cmdref=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --cni-chaining-mode='generic-veth'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --config=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --config-dir='/tmp/cilium/config-map'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --controller-group-metrics=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --custom-cni-conf='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --datapath-mode='veth'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --debug='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --debug-verbose=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --direct-routing-device='net0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --direct-routing-skip-unreachable='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --disable-endpoint-crd='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --dnsproxy-socket-linger-timeout='10'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --egress-gateway-reconciliation-trigger-interval='1s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-auto-protect-node-port-range='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-bpf-clock-probe='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-cilium-endpoint-slice='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-cilium-operator-server-access='*'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-endpoint-health-checking='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-gateway-api-alpn='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-gateway-api-app-protocol='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-gateway-api-proxy-protocol='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-gateway-api-secrets-sync='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-health-check-loadbalancer-ip='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-health-check-nodeport='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-health-checking='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-host-legacy-routing='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-hubble='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-icmp-rules='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-identity-mark='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ingress-controller='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ingress-proxy-protocol='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ingress-secrets-sync='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ipv4='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ipv4-big-tcp='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ipv4-egress-gateway='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ipv4-masquerade='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ipv6='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ipv6-big-tcp='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-ipv6-masquerade='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-k8s='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-k8s-api-discovery='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-k8s-endpoint-slice='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-k8s-networkpolicy='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-k8s-terminating-endpoint='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-l2-neigh-discovery='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-l7-proxy='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-local-node-route='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-local-redirect-policy='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-masquerade-to-route-source='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-metrics='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-node-ipam='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-node-port='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-node-selector-labels='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-policy='default'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-runtime-device-detection='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-sctp='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-session-affinity='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-srv6='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-svc-source-range-check='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-tcx='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-vtep='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-well-known-identities='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enable-xt-socket-fallback='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --enforce-ingress-https='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --envoy-access-log-buffer-size='4096'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --envoy-base-id='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --envoy-keep-cap-netbindservice='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --external-envoy-proxy='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --gateway-api-hostnetwork-enabled='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --gateway-api-hostnetwork-nodelabelselector=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --gateway-api-secrets-namespace='cilium-secrets'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --gateway-api-service-externaltrafficpolicy='Cluster'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --gateway-api-xff-num-trusted-hops='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --gops-port='9891'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --hubble-disable-tls='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --hubble-export-file-max-backups='5'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --hubble-export-file-max-size-mb='10'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --hubble-listen-address=':4244'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --hubble-socket-path='/var/run/cilium/hubble.sock'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --hubble-tls-cert-file='/var/lib/cilium/tls/hubble/server.crt'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --hubble-tls-client-ca-files='/var/lib/cilium/tls/hubble/client-ca.crt'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --hubble-tls-key-file='/var/lib/cilium/tls/hubble/server.key'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --identity-allocation-mode='crd'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --identity-gc-interval='15m0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --identity-gc-rate-interval='1m0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --identity-gc-rate-limit='2500'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --identity-heartbeat-timeout='30m0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-default-lb-mode='dedicated'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-default-request-timeout='0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-default-secret-name=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-default-secret-namespace=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-default-xff-num-trusted-hops='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-hostnetwork-enabled='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-hostnetwork-nodelabelselector=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-hostnetwork-shared-listener-port='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-lb-annotation-prefixes='lbipam.cilium.io,service.beta.kubernetes.io,service.kubernetes.io,cloud.google.com'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-secrets-namespace='cilium-secrets'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ingress-shared-lb-service-name='cilium-ingress'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --install-no-conntrack-iptables-rules='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --instance-tags-filter=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ipam='cluster-pool'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --ipam-cilium-node-update-rate='15s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-api-server=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-client-burst='20'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-client-connection-keep-alive='30s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-client-connection-timeout='30s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-client-qps='10'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-heartbeat-timeout='30s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-kubeconfig-path=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-namespace='kube-system'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-require-ipv4-pod-cidr='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-require-ipv6-pod-cidr='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --k8s-service-proxy-name=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --kube-proxy-replacement='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --kube-proxy-replacement-healthz-bind-address=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --kvstore=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --kvstore-lease-ttl='15m0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --kvstore-opt=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --leader-election-lease-duration='15s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --leader-election-renew-deadline='10s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --leader-election-retry-period='2s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --limit-ipam-api-burst='20'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --limit-ipam-api-qps='4'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --loadbalancer-l7=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --loadbalancer-l7-algorithm='round_robin'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --loadbalancer-l7-ports=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --log-driver=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --log-opt=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --max-connected-clusters='255'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --mesh-auth-enabled='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --mesh-auth-gc-interval='5m0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --mesh-auth-mutual-enabled='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --mesh-auth-queue-size='1024'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --mesh-auth-rotated-identities-queue-size='1024'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --mesh-auth-spiffe-trust-domain='spiffe.cilium'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --mesh-auth-spire-agent-socket='/run/spire/sockets/agent/agent.sock'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --mesh-auth-spire-server-address='spire-server.spire.svc:8081'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --mesh-auth-spire-server-connection-timeout='10s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --minimum-lbip-pools-required='2'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --monitor-aggregation='medium'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --monitor-aggregation-flags='all'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --monitor-aggregation-interval='5s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --nat-map-stats-entries='32'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --nat-map-stats-interval='30s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --node-port-bind-protection='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --nodeport-addresses=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --nodes-gc-interval='5m0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --operator-api-serve-addr='127.0.0.1:9234'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --operator-pprof='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --operator-pprof-address='localhost'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --operator-pprof-port='6061'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --operator-prometheus-serve-addr=':9963'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --parallel-alloc-workers='50'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --pod-restart-selector='k8s-app=kube-dns'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --policy-cidr-match-mode=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --preallocate-bpf-maps='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --procfs='/host/proc'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --proxy-connect-timeout='2'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --proxy-idle-timeout-seconds='60'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --proxy-initial-fetch-timeout='30'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --proxy-max-connection-duration-seconds='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --proxy-max-requests-per-connection='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --proxy-prometheus-port='9964'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --proxy-xff-num-trusted-hops-egress='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --proxy-xff-num-trusted-hops-ingress='0'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --remove-cilium-node-taints='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --routing-mode='native'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --service-no-backend-response='reject'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --set-cilium-is-up-condition='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --set-cilium-node-taints='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --skip-crd-creation='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --subnet-ids-filter=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --subnet-tags-filter=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --synchronize-k8s-nodes='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --synchronize-k8s-services='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --tofqdns-dns-reject-response-code='refused'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --tofqdns-enable-dns-compression='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --tofqdns-endpoint-max-ip-per-hostname='50'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --tofqdns-idle-connection-grace-period='0s'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --tofqdns-max-deferred-connection-deletes='10000'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --tofqdns-proxy-response-max-delay='100ms'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --tunnel-protocol='geneve'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --unmanaged-pod-watcher-interval='15'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --validate-network-policy='true'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --version='false'" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --vtep-cidr=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --vtep-endpoint=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --vtep-mac=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="  --vtep-mask=''" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="Cilium Operator 1.16.12 a66093957f 2025-07-14T15:44:16+00:00 go version go1.24.4 linux/arm64" subsys=cilium-operator-generic
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="pprof.init.func1 (pkg/pprof/cell.go:48)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=258.708µs function="pprof.init.func1 (pkg/pprof/cell.go:48)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="gops.registerGopsHooks (pkg/gops/cell.go:38)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=24.125µs function="gops.registerGopsHooks (pkg/gops/cell.go:38)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="metrics.registerMetricsManager (.../operator/metrics/metrics.go:72)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=273.292µs function="metrics.registerMetricsManager (.../operator/metrics/metrics.go:72)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="types.ClusterInfo.InitClusterIDMax (.../clustermesh/types/types.go:39)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=19.125µs function="types.ClusterInfo.InitClusterIDMax (.../clustermesh/types/types.go:39)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="types.ClusterInfo.Validate (.../clustermesh/types/option.go:52)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=11.625µs function="types.ClusterInfo.Validate (.../clustermesh/types/option.go:52)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="cmd.registerOperatorHooks (cmd/root.go:320)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=606.083µs function="cmd.registerOperatorHooks (cmd/root.go:320)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="controller.Init (pkg/controller/cell.go:67)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=20.416µs function="controller.Init (pkg/controller/cell.go:67)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="api.init.func1 (.../operator/api/cell.go:31)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=4.790915ms function="api.init.func1 (.../operator/api/cell.go:31)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="apis.createCRDs (.../k8s/apis/cell.go:62)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=41.834µs function="apis.createCRDs (.../k8s/apis/cell.go:62)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="bgpv2.registerBGPResourceManager (pkg/bgpv2/manager.go:80)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=91.459µs function="bgpv2.registerBGPResourceManager (pkg/bgpv2/manager.go:80)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="lbipam.init.func2 (pkg/lbipam/cell.go:31)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=54.125µs function="lbipam.init.func2 (pkg/lbipam/cell.go:31)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="nodeipam.registerNodeSvcLBReconciler (pkg/nodeipam/cell.go:51)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=198.5µs function="nodeipam.registerNodeSvcLBReconciler (pkg/nodeipam/cell.go:51)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="auth.registerIdentityWatcher (.../operator/auth/watcher.go:42)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=71.624µs function="auth.registerIdentityWatcher (.../operator/auth/watcher.go:42)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="endpointslicesync.registerEndpointSliceSync (.../clustermesh/endpointslicesync/endpointslicesync.go:15)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=91.375µs function="endpointslicesync.registerEndpointSliceSync (.../clustermesh/endpointslicesync/endpointslicesync.go:15)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="mcsapi.initMCSAPIController (.../clustermesh/mcsapi/cell.go:102)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=28.625µs function="mcsapi.initMCSAPIController (.../clustermesh/mcsapi/cell.go:102)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="cmd.registerLegacyOnLeader (cmd/root.go:474)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=66µs function="cmd.registerLegacyOnLeader (cmd/root.go:474)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="identitygc.registerGC (.../operator/identitygc/gc.go:90)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=66.042µs function="identitygc.registerGC (.../operator/identitygc/gc.go:90)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="ciliumendpointslice.registerController (pkg/ciliumendpointslice/controller.go:78)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=151.041µs function="ciliumendpointslice.registerController (pkg/ciliumendpointslice/controller.go:78)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="endpointgc.registerGC (.../operator/endpointgc/gc.go:59)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=24.084µs function="endpointgc.registerGC (.../operator/endpointgc/gc.go:59)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="gateway-api.initGatewayAPIController (pkg/gateway-api/cell.go:106)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=72.333µs function="gateway-api.initGatewayAPIController (pkg/gateway-api/cell.go:106)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="ingress.registerReconciler (pkg/ingress/cell.go:104)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=100.375µs function="ingress.registerReconciler (pkg/ingress/cell.go:104)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="secretsync.initSecretSyncReconciliation (pkg/secretsync/cell.go:54)"
+time="2025-09-16T08:45:56Z" level=debug msg="Skipping secret sync initialization as no registrations are available" subsys=secret-sync
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=6.478247ms function="secretsync.initSecretSyncReconciliation (pkg/secretsync/cell.go:54)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="ciliumenvoyconfig.registerL7LoadBalancingController (pkg/ciliumenvoyconfig/cell.go:60)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=46.458µs function="ciliumenvoyconfig.registerL7LoadBalancingController (pkg/ciliumenvoyconfig/cell.go:60)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="networkpolicy.registerPolicyValidator (pkg/networkpolicy/cell.go:69)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=86.042µs function="networkpolicy.registerPolicyValidator (pkg/networkpolicy/cell.go:69)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="operator.updateOperatorConfigMetricOnStart (.../features/operator/features.go:13)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=42.167µs function="operator.updateOperatorConfigMetricOnStart (.../features/operator/features.go:13)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoking function="health.metricPublisher (.../hive/health/metrics.go:48)"
+time=2025-09-16T08:45:56Z level=debug msg=Invoked duration=23.083µs function="health.metricPublisher (.../hive/health/metrics.go:48)"
+time=2025-09-16T08:45:56Z level=info msg=Starting
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" function="gops.registerGopsHooks.func1 (pkg/gops/cell.go:43) (operator.operator-infra.gops)"
+time=2025-09-16T08:45:56Z level=debug msg="Start hook executed" function="gops.registerGopsHooks.func1 (pkg/gops/cell.go:43) (operator.operator-infra.gops)" duration=185.542µs
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" function="*metrics.metricsManager.Start (operator.operator-infra.operator-metrics)"
+time=2025-09-16T08:45:56Z level=debug msg="Start hook executed" function="*metrics.metricsManager.Start (operator.operator-infra.operator-metrics)" duration=14.333µs
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" function="client.(*compositeClientset).onStart (operator.operator-infra.k8s-client)"
+time="2025-09-16T08:45:56Z" level=info msg="Registering CNP / CCNP validator" subsys=network-policy-validator
+time="2025-09-16T08:45:56Z" level=info msg="Started gops server" address="127.0.0.1:9891" subsys=gops
+time="2025-09-16T08:45:56Z" level=info msg="Establishing connection to apiserver" host="https://127.0.0.1:16443" subsys=k8s-client
+time="2025-09-16T08:45:56Z" level=info msg="Starting metrics server" address=":9963" subsys=operator-metrics
+time="2025-09-16T08:45:56Z" level=info msg="Connected to apiserver" subsys=k8s-client
+time="2025-09-16T08:45:56Z" level=debug msg="Starting new controller" name=k8s-heartbeat subsys=controller uuid=4b439a43-4e76-498e-bca8-602b0351b7d4
+time="2025-09-16T08:45:56Z" level=debug msg="Controller func execution time: 599.25µs" name=k8s-heartbeat subsys=controller uuid=4b439a43-4e76-498e-bca8-602b0351b7d4
+time=2025-09-16T08:45:56Z level=debug msg="Start hook executed" function="client.(*compositeClientset).onStart (operator.operator-infra.k8s-client)" duration=2.527708ms
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" function="cmd.registerOperatorHooks.func1 (cmd/root.go:323) (operator.operator-controlplane)"
+time=2025-09-16T08:45:56Z level=debug msg="Start hook executed" function="cmd.registerOperatorHooks.func1 (cmd/root.go:323) (operator.operator-controlplane)" duration=3.875µs
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" function="statedb.newHiveDB.func1 (.../cilium/statedb/cell.go:33) (statedb)"
+time=2025-09-16T08:45:56Z level=debug msg="Start hook executed" function="statedb.newHiveDB.func1 (.../cilium/statedb/cell.go:33) (statedb)" duration=1.125µs
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" function="*health.provider.Start (health)"
+time=2025-09-16T08:45:56Z level=debug msg="Start hook executed" function="*health.provider.Start (health)" duration=167ns
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" function="*api.server.Start (operator.operator-controlplane.cilium-operator-api)"
+time="2025-09-16T08:45:56Z" level=info msg="Waiting for leader election" subsys=cilium-operator-generic
+time="2025-09-16T08:45:56Z" level=info msg="attempting to acquire leader lease kube-system/cilium-operator-resource-lock..." subsys=klog
+time=2025-09-16T08:45:56Z level=debug msg="Start hook executed" function="*api.server.Start (operator.operator-controlplane.cilium-operator-api)" duration=3.442249ms
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" function="client.(*compositeClientset).onStart (operator.operator-infra.k8s-client-builder)"
+time="2025-09-16T08:45:56Z" level=info msg="Establishing connection to apiserver" host="https://127.0.0.1:16443" subsys=k8s-client-builder
+time="2025-09-16T08:45:56Z" level=info msg="successfully acquired lease kube-system/cilium-operator-resource-lock" subsys=klog
+time="2025-09-16T08:45:56Z" level=info msg="Leading the operator HA deployment" subsys=cilium-operator-generic
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*job.group.Start
+time=2025-09-16T08:45:56Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*job.group.Start duration=3.75µs
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Service].Start
+time=2025-09-16T08:45:56Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Service].Start duration=1.708µs
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" module=operator.operator-controlplane function="apis.createCRDs.func1 (.../k8s/apis/cell.go:64)"
+time=2025-09-16T08:45:56Z level=debug msg="Starting one-shot job" module=operator.operator-controlplane.leader-lifecycle.service-resolver name=service-reloader-initializer func="dial.newServiceResolver.func2 (pkg/dial/resolver.go:52)"
+time=2025-09-16T08:45:56Z level=debug msg="upserting health status" module=health lastLevel=none reporter-id=operator.operator-controlplane.leader-lifecycle.service-resolver.job-service-reloader-initializer status="operator.operator-controlplane.leader-lifecycle.service-resolver.job-service-reloader-initializer: [OK] Running"
+time="2025-09-16T08:45:56Z" level=info msg="Connected to apiserver" subsys=k8s-client-builder
+time="2025-09-16T08:45:56Z" level=debug msg="Starting new controller" name=k8s-heartbeat subsys=controller uuid=b192cf7b-5767-4b62-9261-8b28dd5a73ca
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumloadbalancerippools.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumloadbalancerippools.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumcidrgroups.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumcidrgroups.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumexternalworkloads.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumexternalworkloads.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumpodippools.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumpodippools.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumidentities.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumidentities.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumendpoints.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumendpoints.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumnodeconfigs.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumnodeconfigs.cilium.io subsys=k8s
+time=2025-09-16T08:45:56Z level=debug msg="Start hook executed" function="client.(*compositeClientset).onStart (operator.operator-infra.k8s-client-builder)" duration=11.818913ms
+time=2025-09-16T08:45:56Z level=debug msg="Executing start hook" function="*job.group.Start (health)"
+time=2025-09-16T08:45:56Z level=debug msg="Start hook executed" function="*job.group.Start (health)" duration=5.292µs
+time=2025-09-16T08:45:56Z level=info msg=Started duration=18.139744ms
+time=2025-09-16T08:45:56Z level=debug msg="Starting one-shot job" module=health name=module-status-metrics func="health.metricPublisher.func2 (.../hive/health/metrics.go:58)"
+time=2025-09-16T08:45:56Z level=debug msg="upserting health status" module=health lastLevel=none reporter-id=health.job-module-status-metrics status="health.job-module-status-metrics: [OK] Running"
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumnodeconfigs.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumnodeconfigs.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliuml2announcementpolicies.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliuml2announcementpolicies.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Controller func execution time: 3.539165ms" name=k8s-heartbeat subsys=controller uuid=b192cf7b-5767-4b62-9261-8b28dd5a73ca
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumnodes.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumnodes.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumclusterwidenetworkpolicies.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumclusterwidenetworkpolicies.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Checking if CRD (CustomResourceDefinition) needs update..." name=ciliumnetworkpolicies.cilium.io subsys=k8s
+time="2025-09-16T08:45:56Z" level=debug msg="Waiting for CRD (CustomResourceDefinition) to be available..." name=ciliumnetworkpolicies.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumloadbalancerippools.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumidentities.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumpodippools.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumcidrgroups.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumexternalworkloads.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumendpoints.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumnodeconfigs.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumnodeconfigs.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliuml2announcementpolicies.cilium.io subsys=k8s
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumnodes.cilium.io subsys=k8s
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function="apis.createCRDs.func1 (.../k8s/apis/cell.go:64)" duration=529.114879ms
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*job.group.Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*job.group.Start duration=9.917µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumBGPClusterConfig].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumBGPClusterConfig].Start duration=20µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumBGPNodeConfigOverride].Start
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumnetworkpolicies.cilium.io subsys=k8s
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumBGPNodeConfigOverride].Start duration=10.5µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumBGPNodeConfig].Start
+time="2025-09-16T08:45:57Z" level=info msg="CRD (CustomResourceDefinition) is installed and up-to-date" name=ciliumclusterwidenetworkpolicies.cilium.io subsys=k8s
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumBGPNodeConfig].Start duration=6.708µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumNode].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumNode].Start duration=52.5µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*job.group.Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*job.group.Start duration=15.416µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumLoadBalancerIPPool].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumLoadBalancerIPPool].Start duration=2.208µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*job.group.Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*job.group.Start duration=3.083µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumIdentity].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumIdentity].Start duration=2.625µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*job.group.Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*job.group.Start duration=1.5µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s.Endpoints].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s.Endpoints].Start duration=8.708µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumPodIPPool].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumPodIPPool].Start duration=6.166µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumEndpoint].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumEndpoint].Start duration=2.584µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumEndpointSlice].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2alpha1.CiliumEndpointSlice].Start duration=1.792µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Pod].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Pod].Start duration=2.666µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Namespace].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/slim/k8s/api/core/v1.Namespace].Start duration=2.125µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=cmd.(*legacyOnLeader).onStart
+time=2025-09-16T08:45:57Z level=debug msg="Starting one-shot job" module=operator.operator-controlplane.leader-lifecycle.lbipam name="lbipam main" func="lbipam.newLBIPAMCell.func1 (pkg/lbipam/cell.go:107)"
+time="2025-09-16T08:45:57Z" level=info msg="Initializing IPAM" mode=cluster-pool subsys=cilium-operator-generic
+time=2025-09-16T08:45:57Z level=debug msg="upserting health status" module=health lastLevel=none reporter-id="operator.operator-controlplane.leader-lifecycle.lbipam.job-lbipam main" status="operator.operator-controlplane.leader-lifecycle.lbipam.job-lbipam main: [OK] Running"
+time=2025-09-16T08:45:57Z level=debug msg="Starting one-shot job" module=operator.operator-controlplane.leader-lifecycle.controller-runtime name=manager func="controller-runtime.newManager.func2 (pkg/controller-runtime/cell.go:85)"
+time="2025-09-16T08:45:57Z" level=info msg="Starting ClusterPool IP allocator" ipv4CIDRs="[10.0.0.0/8]" ipv6CIDRs="[]" subsys=ipam-allocator-clusterpool
+time="2025-09-16T08:45:57Z" level=info msg="LB-IPAM initializing" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=info msg="Starting LB IP allocator" subsys=cilium-operator-generic
+time="2025-09-16T08:45:57Z" level=info msg="Managing Cilium Node Taints or Setting Cilium Is Up Condition for Kubernetes Nodes" k8sNamespace=kube-system label-selector="k8s-app=cilium" remove-cilium-node-taints=true set-cilium-is-up-condition=true set-cilium-node-taints=true subsys=cilium-operator-generic
+time=2025-09-16T08:45:57Z level=debug msg="upserting health status" module=health lastLevel=none reporter-id=operator.operator-controlplane.leader-lifecycle.controller-runtime.job-manager status="operator.operator-controlplane.leader-lifecycle.controller-runtime.job-manager: [OK] Running"
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'default' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'default' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'default' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'default' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'default' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'default' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=info msg="LB-IPAM done initializing" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Pool counts of 'bastion' changed, patching" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Settling pool conflicts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=info msg="Starting to synchronize CiliumNode custom resources" subsys=cilium-operator-generic
+time="2025-09-16T08:45:57Z" level=debug msg="Starting new controller" name=restart-unmanaged-pods subsys=controller uuid=f94d7d44-f3af-434c-bf3a-604deb2ad3fe
+time="2025-09-16T08:45:57Z" level=debug msg="Found managed pod due to presence of a CEP" identity=0 k8sPodName=kube-system/coredns-668d6bf9bc-8r72j subsys=cilium-operator-generic
+time="2025-09-16T08:45:57Z" level=debug msg="Found managed pod due to presence of a CEP" identity=0 k8sPodName=kube-system/coredns-668d6bf9bc-fmlrf subsys=cilium-operator-generic
+time="2025-09-16T08:45:57Z" level=debug msg="Controller func execution time: 53.25µs" name=restart-unmanaged-pods subsys=controller uuid=f94d7d44-f3af-434c-bf3a-604deb2ad3fe
+time="2025-09-16T08:45:57Z" level=info msg="Starting to garbage collect stale CiliumNode custom resources" subsys=watchers
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of config update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of config update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Starting new controller" name=cilium-node-gc subsys=controller uuid=43cafce4-c809-4bae-9748-a25a2742ab09
+time="2025-09-16T08:45:57Z" level=debug msg="Controller func execution time: 3.292µs" name=cilium-node-gc subsys=controller uuid=43cafce4-c809-4bae-9748-a25a2742ab09
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=hubble-peer subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=kube-dns subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=kube-system/hubble-peer subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=kubernetes subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=coilv2-webhook-service subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event stateSynced msg controller synced, can allocate IPs now" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notLoadBalancer msg not a LoadBalancer" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=kube-system/kube-dns subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notLoadBalancer msg not a LoadBalancer" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/kubernetes subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notLoadBalancer msg not a LoadBalancer" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=kube-system/coilv2-webhook-service subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notLoadBalancer msg not a LoadBalancer" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=info msg="CiliumNodes caches synced with Kubernetes" subsys=cilium-operator-generic
+time="2025-09-16T08:45:57Z" level=debug msg="Allocated v4CIDR [10.0.0.0/24]" node-name=bgp-migration-control-plane subsys=pod-cidr
+time="2025-09-16T08:45:57Z" level=debug msg="Allocated existing CIDRs" allocated=true cidrs=10.0.0.0/24 n.canAllocatePodCIDRs=false node-name=bgp-migration-control-plane subsys=pod-cidr
+time="2025-09-16T08:45:57Z" level=debug msg="Allocated v4CIDR [10.0.1.0/24]" node-name=bgp-migration-worker subsys=pod-cidr
+time="2025-09-16T08:45:57Z" level=debug msg="Allocated existing CIDRs" allocated=true cidrs=10.0.1.0/24 n.canAllocatePodCIDRs=false node-name=bgp-migration-worker subsys=pod-cidr
+time="2025-09-16T08:45:57Z" level=debug msg="Allocated v4CIDR [10.0.2.0/24]" node-name=bgp-migration-worker2 subsys=pod-cidr
+time="2025-09-16T08:45:57Z" level=debug msg="Allocated existing CIDRs" allocated=true cidrs=10.0.2.0/24 n.canAllocatePodCIDRs=false node-name=bgp-migration-worker2 subsys=pod-cidr
+time="2025-09-16T08:45:57Z" level=info msg="Starting CNP derivative handler" subsys=cilium-operator-generic
+time="2025-09-16T08:45:57Z" level=debug msg="Starting new controller" name=cnp-to-groups subsys=controller uuid=f279066e-cdfa-467d-ac2c-bfd1268ad0b4
+time="2025-09-16T08:45:57Z" level=info msg="Starting CCNP derivative handler" subsys=cilium-operator-generic
+time="2025-09-16T08:45:57Z" level=debug msg="Starting new controller" name=ccnp-to-groups subsys=controller uuid=7b9d8d6c-91fa-43a0-9fb6-17f88843bbd1
+time="2025-09-16T08:45:57Z" level=info msg="Initialization complete" subsys=cilium-operator-generic
+time="2025-09-16T08:45:57Z" level=debug msg="Starting new controller" name=update-cilium-nodes-pod-cidr subsys=controller uuid=98548ea0-a873-40ad-9673-624b611eaeaf
+time="2025-09-16T08:45:57Z" level=debug msg="Controller func execution time: 1.042µs" name=cnp-to-groups subsys=controller uuid=f279066e-cdfa-467d-ac2c-bfd1268ad0b4
+time="2025-09-16T08:45:57Z" level=debug msg="Controller func execution time: 292ns" name=ccnp-to-groups subsys=controller uuid=7b9d8d6c-91fa-43a0-9fb6-17f88843bbd1
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=cmd.(*legacyOnLeader).onStart duration=302.435579ms
+time="2025-09-16T08:45:57Z" level=info msg="Starting CRD identity garbage collector" interval=15m0s subsys=k8s-identities-gc
+time="2025-09-16T08:45:57Z" level=debug msg="Starting new controller" name=crd-identity-gc subsys=controller uuid=1bbb8aac-6301-4c40-add6-1b0a81fe9ff3
+time="2025-09-16T08:45:57Z" level=debug msg="Running CRD identity garbage collector" subsys=k8s-identities-gc
+time="2025-09-16T08:45:57Z" level=info msg="Starting to garbage collect stale CiliumEndpoint custom resources" subsys=k8s-endpoints-gc
+time="2025-09-16T08:45:57Z" level=debug msg="Starting new controller" name=to-k8s-ciliumendpoint-gc subsys=controller uuid=60b507b0-c885-46ca-85ae-b18b675f2967
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function="identitygc.registerGC.func1 (.../operator/identitygc/gc.go:118)"
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function="identitygc.registerGC.func1 (.../operator/identitygc/gc.go:118)" duration=87.5µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*endpointgc.GC.Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*endpointgc.GC.Start duration=9.333µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*job.group.Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*job.group.Start duration=2.833µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumNetworkPolicy].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumNetworkPolicy].Start duration=1.542µs
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumClusterwideNetworkPolicy].Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*resource.resource[*github.com/cilium/cilium/pkg/k8s/apis/cilium.io/v2.CiliumClusterwideNetworkPolicy].Start duration=458ns
+time=2025-09-16T08:45:57Z level=debug msg="Executing start hook" module=operator.operator-controlplane function=*job.group.Start
+time=2025-09-16T08:45:57Z level=info msg="Start hook executed" module=operator.operator-controlplane function=*job.group.Start duration=709ns
+time=2025-09-16T08:45:57Z level=debug msg="Starting one-shot job" module=operator.operator-controlplane.leader-lifecycle.enabled-features name=update-config-metric func="operator.updateOperatorConfigMetricOnStart.func1 (.../features/operator/features.go:14)"
+time=2025-09-16T08:45:57Z level=debug msg="upserting health status" module=health lastLevel=none reporter-id=operator.operator-controlplane.leader-lifecycle.enabled-features.job-update-config-metric status="operator.operator-controlplane.leader-lifecycle.enabled-features.job-update-config-metric: [OK] Running"
+time=2025-09-16T08:45:57Z level=debug msg="stopping health reporter" module=health reporter-id=operator.operator-controlplane.leader-lifecycle.enabled-features.job-update-config-metric
+time=2025-09-16T08:45:57Z level=debug msg="Observer job started" module=operator.operator-controlplane.leader-lifecycle.network-policy-validator name=cnp-validation func=networkpolicy.(*policyValidator).handleCNPEvent
+time=2025-09-16T08:45:57Z level=debug msg="upserting health status" module=health lastLevel=none reporter-id=operator.operator-controlplane.leader-lifecycle.network-policy-validator.observer-job-cnp-validation status="operator.operator-controlplane.leader-lifecycle.network-policy-validator.observer-job-cnp-validation: [OK] Primed"
+time=2025-09-16T08:45:57Z level=debug msg="Observer job started" module=operator.operator-controlplane.leader-lifecycle.network-policy-validator name=ccnp-validation func=networkpolicy.(*policyValidator).handleCCNPEvent
+time=2025-09-16T08:45:57Z level=debug msg="upserting health status" module=health lastLevel=none reporter-id=operator.operator-controlplane.leader-lifecycle.network-policy-validator.observer-job-ccnp-validation status="operator.operator-controlplane.leader-lifecycle.network-policy-validator.observer-job-ccnp-validation: [OK] Primed"
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="Updated Node" error="<nil>" node-name=bgp-migration-control-plane subsys=pod-cidr
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=11109 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=21675 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=23987 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=30387 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=52189 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=8089 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=8730 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=30387 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=52189 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=8089 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=11109 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Marking identity alive" identity=21675 subsys=identity-heartbeat
+time="2025-09-16T08:45:57Z" level=debug msg="Controller func execution time: 200.398733ms" name=crd-identity-gc subsys=controller uuid=1bbb8aac-6301-4c40-add6-1b0a81fe9ff3
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:57Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:57Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:57Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:57Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="UpdatedStatus Node" error="<nil>" node-name=bgp-migration-control-plane subsys=pod-cidr
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="Controller func execution time: 601.063756ms" name=to-k8s-ciliumendpoint-gc subsys=controller uuid=60b507b0-c885-46ca-85ae-b18b675f2967
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="Updated Node" error="<nil>" node-name=bgp-migration-worker subsys=pod-cidr
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="UpdatedStatus Node" error="<nil>" node-name=bgp-migration-worker subsys=pod-cidr
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="Updated Node" error="<nil>" node-name=bgp-migration-worker2 subsys=pod-cidr
+time="2025-09-16T08:45:58Z" level=debug msg="UpdatedStatus Node" error="<nil>" node-name=bgp-migration-worker2 subsys=pod-cidr
+time="2025-09-16T08:45:58Z" level=debug msg="Controller func execution time: 902.353641ms" name=update-cilium-nodes-pod-cidr subsys=controller uuid=98548ea0-a873-40ad-9673-624b611eaeaf
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="Updating existing controller" name=update-cilium-nodes-pod-cidr subsys=controller uuid=98548ea0-a873-40ad-9673-624b611eaeaf
+time="2025-09-16T08:45:58Z" level=debug msg="Controller update time: 21.458µs" name=update-cilium-nodes-pod-cidr subsys=controller uuid=98548ea0-a873-40ad-9673-624b611eaeaf
+time="2025-09-16T08:45:58Z" level=debug msg="Controller func execution time: 166ns" name=update-cilium-nodes-pod-cidr subsys=controller uuid=98548ea0-a873-40ad-9673-624b611eaeaf
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:58Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:58Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:58Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:59Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:59Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:59Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:59Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:59Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:59Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:59Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:59Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:45:59Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:59Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:45:59Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:45:59Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:59Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:45:59Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:45:59Z" level=debug msg="event noChange msg service converged, no change" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:45:59Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:45:59Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:49:02Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:49:02Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:02Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:02Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:49:02Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:49:02Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:49:02Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:02Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:02Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:49:02Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:49:02Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:49:02Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:02Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:02Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:49:02Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:49:02Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:49:02Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:02Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:49:02Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"default/default-lb-two\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=default/default-lb subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="op allocateIP error no available IPs msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+
+time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"default/default-lb\": no available IPs" event=AllocationFailed
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=default-lb subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event serviceUpdated msg updated service object" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event endUpdate msg end of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="assigning load balancer ip for service" component=metalLBController.SetBalancer service=bastion/bastion-lb-two subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event startUpdate msg start of service update" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="event clearAssignment reason notAllowedByConfig msg current IP not allowed by config, clearing" subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="op allocateIP error unknown pool \"bastion\" msg IP allocation failed" subsys=bgp-manager
+Failed to fire hook: log entry doesn't contain 'subsys' field: time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+
+time="2025-09-16T08:49:03Z" level=error msg="Failed to allocate IP for \"bastion/bastion-lb-two\": unknown pool \"bastion\"" event=AllocationFailed
+time="2025-09-16T08:49:03Z" level=debug msg="adding event to queue" component=Manager.OnUpdateService service-name=bastion-lb subsys=bgp-manager
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam
+time="2025-09-16T08:49:03Z" level=debug msg="Updating pool counts" subsys=lbipam

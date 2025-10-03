@@ -6,13 +6,13 @@ BIRD_VERSION ?= 3.0.0
 BGP_VARIANT ?= metallb
 
 ifeq ($(BGP_VARIANT),metallb)
-  CILIUM_DIR = metallb
+  CILIUM_DIR = metallb/base
 else
-  CILIUM_DIR = bgp-cp
+  CILIUM_DIR = bgp-cp/base
 endif
 
 ifdef PATCHED
-  CILIUM_DIR := $(CILIUM_DIR)/overlay/patched
+  CILIUM_DIR := $(CILIUM_DIR)/../overlay/patched
 endif
 
 .PHONY: deploy
@@ -37,7 +37,7 @@ deploy: update-coil update-rivers
 	kubectl apply -f test_lb.yaml
 
 	# Add annotations to LB services
-	kubectl apply -k lbipam-annotate/config/apply
+	# kubectl apply -k lbipam-annotate/config/apply
 
 .PHONY: install-coil
 install-coil:
@@ -47,6 +47,11 @@ install-coil:
 
 .PHONY: install-cilium
 install-cilium:
+ifdef PATCHED
+	kind load docker-image --name bgp-migration localhost:5000/cilium/cilium-dev:local
+	kind load docker-image --name bgp-migration localhost:5000/cilium/operator-generic:local
+endif
+
 	# add configmap for bgp
 	if [ "$(BGP_VARIANT)" = "metallb" ]; then \
 		kubectl apply -f metallb/bgp-config.yaml; \
@@ -61,11 +66,10 @@ install-cilium:
 	kubectl wait --for=condition=Ready -n kube-system pod -l app.kubernetes.io/part-of=cilium --timeout=300s
 	cilium status --namespace kube-system --ignore-warnings
 
+.PHONY: apply-bgp-cp
+apply-bgp-cp:
 	# apply bgp manifests
-	if [ "$(BGP_VARIANT)" != "metallb" ]; then \
-		kubectl apply -f bgp-cp/_tmp_baseline_pool.yaml; \
-		kubectl apply -f bgp-cp/bgp_lb.yaml; \
-	fi
+	kubectl apply -f bgp-cp/bgp_lb.yaml
 
 .PHONY: install-bgp-cp
 install-bgp-cp:
@@ -117,7 +121,7 @@ update-cilium:
 	cd /tmp/work-cilium
 	helm template /tmp/work-cilium/install/kubernetes/cilium/ \
 		--namespace=kube-system \
-		--values $(CILIUM_DIR)/values.yaml > $(CILIUM_DIR)/upstream.yaml
+		--values $(CILIUM_DIR)/values.yaml > $(CILIUM_DIR)/base/upstream.yaml
 	rm -rf /tmp/work-cilium
 
 update-rivers: tools/rivers

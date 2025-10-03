@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: metrics-scrape
+  namespace: default
+spec:
+  containers:
+    - name: curl
+      image: curlimages/curl
+      command: ["/bin/sh","-lc"]
+      # Make the mounted script executable without a chmod by using defaultMode below.
+      args: ["/opt/bin/metrics-watch.sh"]
+      env:
+        - name: URL
+          value: "http://10.0.2.2:9963/metrics"
+        - name: METRIC
+          value: "lbipam_conflicting_pools_total"
+        - name: INTERVAL
+          value: "1"
+      volumeMounts:
+        - name: watch-script
+          mountPath: /opt/bin
+          readOnly: true
+  volumes:
+    - name: watch-script
+      configMap:
+        # Kustomize will rewrite this to the hashed name.
+        name: metrics-watch
+        items:
+          - key: metrics-watch.sh
+            path: metrics-watch.sh
+        # Make it executable (r-x for all)
+        defaultMode: 0555

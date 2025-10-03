@@ -1,0 +1,23 @@
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicy
+metadata:
+  name: deny-loadbalancer-svc-create
+spec:
+  failurePolicy: Fail
+  matchConstraints:
+    resourceRules:
+      - apiGroups: [""]
+        apiVersions: ["v1"]
+        resources: ["services"]
+        operations: ["CREATE"]
+  validations:
+    - expression: "object.spec.type != 'LoadBalancer'"
+      message: "Creating Service of type LoadBalancer is not allowed in this cluster at the moment."
+---
+apiVersion: admissionregistration.k8s.io/v1
+kind: ValidatingAdmissionPolicyBinding
+metadata:
+  name: deny-loadbalancer-svc-create-binding
+spec:
+  policyName: deny-loadbalancer-svc-create
+  validationActions: ["Deny"]
